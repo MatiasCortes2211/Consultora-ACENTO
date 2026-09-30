@@ -1359,7 +1359,7 @@ function Contact() {
                 color: C.inkMid,
               }}
             >
-              Lunes a viernes, 9 a 18 h (GMT−3)
+              Lunes a viernes, 9 a 17hs
             </p>
           </div>
         </div>
