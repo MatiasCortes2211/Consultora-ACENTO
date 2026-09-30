@@ -1221,7 +1221,7 @@ function Contact() {
               display: "flex",
               flexDirection: "column",
               gap: 8,
-              padding: "32px 36px",
+              padding: "24px 36px",
               background: C.gold,
               textDecoration: "none",
               transition: "background 0.2s",
@@ -1253,13 +1253,56 @@ function Contact() {
               Escribinos ahora →
             </span>
           </a>
+
           <a
-            href="mailto:contacto@acentoconsultora.com.ar"
+            href="https://instagram.com/acento.consultoria"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               display: "flex",
               flexDirection: "column",
               gap: 8,
-              padding: "32px 36px",
+              padding: "24px 36px",
+              background: C.bg,
+              border: `1px solid ${C.rule}`,
+              textDecoration: "none",
+              transition: "border-color 0.2s",
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.borderColor = C.gold)}
+            onMouseLeave={(e) => (e.currentTarget.style.borderColor = C.rule)}
+          >
+            <span
+              style={{
+                fontFamily: "'Inter', system-ui, sans-serif",
+                fontSize: 10,
+                fontWeight: 500,
+                letterSpacing: "0.18em",
+                textTransform: "uppercase",
+                color: C.inkLight,
+              }}
+            >
+              Instagram
+            </span>
+            <span
+              style={{
+                fontFamily: "'Lora', Georgia, serif",
+                fontSize: 16,
+                fontWeight: 500,
+                color: C.ink,
+                lineHeight: 1.2,
+              }}
+            >
+              @acento.consultoria →
+            </span>
+          </a>
+
+          <a
+            href="mailto:acentoci@gmail.com"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: 8,
+              padding: "24px 36px",
               background: C.bg,
               border: `1px solid ${C.rule}`,
               textDecoration: "none",
@@ -1283,16 +1326,17 @@ function Contact() {
             <span
               style={{
                 fontFamily: "'Lora', Georgia, serif",
-                fontSize: 14,
+                fontSize: 15,
                 fontWeight: 500,
                 color: C.ink,
                 lineHeight: 1.35,
                 wordBreak: "break-all",
               }}
             >
-              contacto@acentoconsultora.com.ar
+              acentoci@gmail.com
             </span>
           </a>
+
           <div style={{ padding: "20px 36px", background: C.bg, border: `1px solid ${C.ruleLight}` }}>
             <p
               style={{
@@ -1392,6 +1436,27 @@ function Footer() {
                   </a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="https://instagram.com/tu_usuario_instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    fontFamily: "'Inter', system-ui, sans-serif",
+                    fontSize: 11,
+                    fontWeight: 400,
+                    letterSpacing: "0.1em",
+                    textTransform: "uppercase",
+                    color: C.gold,
+                    textDecoration: "none",
+                    transition: "color 0.2s",
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = C.goldMid)}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = C.gold)}
+                >
+                  Instagram
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
