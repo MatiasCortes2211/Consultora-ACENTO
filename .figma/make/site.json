@@ -1,0 +1,10 @@
+{
+  "description": "Create and customize web pages effortlessly by following specific guidelines, ideal for users seeking structured design solutions.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
